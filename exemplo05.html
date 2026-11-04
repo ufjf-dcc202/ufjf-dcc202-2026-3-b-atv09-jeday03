@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 05</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        header{
+            background-color: aquamarine
+        }
+        footer{
+            background-color: pink;
+        }
+        section{
+            background-color: antiquewhite;
+        }
+        aside{
+            background-color: lightgreen;
+        }
+        nav{
+            background-color: cornsilk;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            border: 1px solid blue;
+            background-color: lightblue;
+            padding: 0.5em;
+        }
+        .holy-grail{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: auto 1fr auto;
+        }
+
+        .holy-grail > header, footer {
+            grid-column: 1/4;
+        }
+        .holy-grail > section {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article class="holy-grail">
+            <header>
+                <h1>Exemplo 05: Holy Grail</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>Primeiro</li>
+                    <li>Segundo</li>
+                    <li>Terceiro</li>
+                    <li>Quarto</li>
+                    <li>Quinto</li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Texto</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dicta, quas voluptatum itaque sint magnam expedita. Necessitatibus optio porro recusandae dolor, rem doloribus laborum laboriosam fugiat sequi velit maxime ut?</p>
+                <p>Non quibusdam, nostrum vero adipisci voluptates deserunt mollitia ex veniam a nisi necessitatibus error sed reprehenderit molestiae iusto. Fugit minus temporibus nobis in quae eligendi excepturi dolores rerum, similique nisi.</p>
+                <p>Mollitia, repellendus nemo? Quidem mollitia, quaerat nemo odit, quas sint accusantium itaque incidunt eos unde quae dolore rerum. Consectetur quibusdam incidunt, quod error sit eos eum nulla veritatis quas optio.</p>
+            </section>
+            <aside>
+                <ul>
+                    <li>Primeiro</li>
+                    <li>Segundo</li>
+                    <li>Terceiro</li>
+                    <li>Quarto</li>
+                    <li>Quinto</li>
+                </ul>
+            </aside>
+            <footer>
+                &copy; 2026 - DCC202 - UFJF
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
